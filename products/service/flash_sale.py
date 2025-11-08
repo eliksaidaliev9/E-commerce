@@ -1,12 +1,19 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import generics, serializers, status
+from rest_framework import generics, serializers, status, filters
 from datetime import datetime,timedelta
 from products.models import Product, FlashSale, ProductViewHistory
+
+from django_filters import rest_framework as django_filters
+from products.filters import FlashSaleFilter
 
 
 class FlashSaleListCreateView(generics.ListCreateAPIView):
     queryset = FlashSale.objects.all()
+
+    filter_backends = [django_filters.DjangoFilterBackend]
+    filterset_class = FlashSaleFilter
+
 
     class FlashSaleSerializer(serializers.ModelSerializer):
         class Meta:
