@@ -9,9 +9,11 @@ from .serializers import CategorySerializer, ProductSerializer, ReviewSerializer
 from django_filters import rest_framework as django_filters
 from rest_framework.pagination import PageNumberPagination
 from .filters import ProductFilter
+from rest_framework.permissions import IsAuthenticated
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated]
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
@@ -32,6 +34,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
 
 class ProductViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated]
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 

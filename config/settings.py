@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'drf_yasg',
+    'rest_framework_simplejwt',
+    'djoser',
+
     'products',
 ]
 
@@ -128,5 +131,33 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ]
+}
+
+SIMPLE_JWT = {
+    'ALGORITHM': 'HS256',
+    'SLIDING_TOKEN_LIFETIME': timedelta(minutes=120),
+    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
+}
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+
+
+DJOSER = {
+    'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid}/{token}/',
+    'USERNAME_RESET_CONFIRM_URL': 'username/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL': True,
+    'SERIALIZERS': {},
 }

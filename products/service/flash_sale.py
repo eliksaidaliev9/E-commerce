@@ -1,4 +1,4 @@
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import generics, serializers, status, filters
 from datetime import datetime,timedelta
@@ -6,6 +6,7 @@ from products.models import Product, FlashSale, ProductViewHistory
 
 from django_filters import rest_framework as django_filters
 from products.filters import FlashSaleFilter
+from rest_framework.permissions import IsAuthenticated
 
 
 class FlashSaleListCreateView(generics.ListCreateAPIView):
@@ -23,6 +24,7 @@ class FlashSaleListCreateView(generics.ListCreateAPIView):
     serializer_class = FlashSaleSerializer
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def check_flash_sale(request, product_id):
     try:
         product = Product.objects.get(id=product_id)
