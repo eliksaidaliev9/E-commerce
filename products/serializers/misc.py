@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Category, Product, Review, ProductViewHistory, ProductLike
+from django.db import models
+from products.models import Product, Category, ProductViewHistory, Review, ProductLike
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -13,7 +14,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ['id', 'name', 'description', 'price', 'category', 'avg_rating']
+        fields = ['id', 'name', 'description', 'price', 'stock', 'avg_rating']
 
 
 class ReviewSerializer(serializers.ModelSerializer):
