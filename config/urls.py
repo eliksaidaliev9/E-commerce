@@ -26,6 +26,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView
 )
 
+
 class JWTSchemaGenerator(OpenAPISchemaGenerator):
     def get_security_definitions(self):
         security_definitions = super().get_security_definitions()
@@ -55,6 +56,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('products.urls')),
+    path('api/v1/billing/', include('billing.urls')),
 
     path('api/v1/auth/', include('djoser.urls')),
     path('api/v1/auth/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
