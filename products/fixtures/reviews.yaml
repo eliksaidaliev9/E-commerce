@@ -1,0 +1,24 @@
+-   model: products.review
+    pk: 1
+    fields:
+        user: 1
+        product: 3
+        content: super
+        rating: 5
+        date_posted: 2025-12-06 14:50:06.206182+00:00
+-   model: products.review
+    pk: 2
+    fields:
+        user: 1
+        product: 3
+        content: yaxshi
+        rating: 3
+        date_posted: 2025-12-06 14:50:29.541494+00:00
+-   model: products.review
+    pk: 3
+    fields:
+        user: 1
+        product: 6
+        content: yaxshi
+        rating: 4
+        date_posted: 2025-12-06 14:50:41.812382+00:00
