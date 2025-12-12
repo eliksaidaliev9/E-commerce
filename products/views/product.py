@@ -37,7 +37,7 @@ class ProductViewSet(viewsets.ModelViewSet):
         related_products = Product.objects.filter(category=instance.category).exclude(id=instance.id)[:5]
         related_serializer = ProductSerializer(related_products, many=True)
         return Response({
-            'products': serializer.data,
+            'product': serializer.data,
             'related_products': related_serializer.data
         })
 

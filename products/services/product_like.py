@@ -11,7 +11,7 @@ from products.models import Product, ProductLike
 def like_product(request, product_id):
     try:
         product = Product.objects.get(id=product_id)
-    except Product.DoesNotExists:
+    except Product.DoesNotExist:
         return Response({"Error": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
     like, created = ProductLike.objects.get_or_create(user=request.user, product=product)

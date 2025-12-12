@@ -10,11 +10,17 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    avg_rating = serializers.FloatField(read_only=True, required=False)
+    avg_rating = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = ['id', 'name', 'description', 'price', 'stock', 'avg_rating']
+        fields = ['id', 'name', 'description', 'price', 'category', 'stock', 'avg_rating']
+
+    def get_avg_rating(self, obj):
+        reviews = obj.reviews.all()
+        if not reviews.exists():
+            return None
+        return sum([r.rating for r in reviews]) / reviews.count()
 
 
 class ReviewSerializer(serializers.ModelSerializer):
