@@ -1,0 +1,69 @@
+-   model: products.product
+    pk: 3
+    fields:
+        name: Apple iPhone 17 Pro Max
+        description: This is the flagship smartphone of 2025, which combines advanced
+            technology, powerful performance, and an elegant design.
+        price: '22000000.00'
+        category: 1
+        stock: 10
+-   model: products.product
+    pk: 4
+    fields:
+        name: Samsung Galaxy S25 Ultra 5G
+        description: A flagship smartphone that embodies Samsungs technological and
+            design achievements.
+        price: '33000000.00'
+        category: 1
+        stock: 5
+-   model: products.product
+    pk: 5
+    fields:
+        name: Xiaomi 15 Ultra
+        description: Resistant to drops and wear and tear
+        price: '16000000.00'
+        category: 1
+        stock: 5
+-   model: products.product
+    pk: 6
+    fields:
+        name: Nike Air Force 1 White
+        description: This is one of the brands most iconic models, first introduced
+            in 1982.
+        price: '3500000.00'
+        category: 2
+        stock: 7
+-   model: products.product
+    pk: 7
+    fields:
+        name: TERREX SWIFT R2 GORE-TEX HIKING
+        description: Move quickly through the mountains with these Adidas sneakers.
+        price: '4700000.00'
+        category: 2
+        stock: 5
+-   model: products.product
+    pk: 8
+    fields:
+        name: New Balance 9060 U9060GRY
+        description: A modern interpretation of the classic 99X line with a focus
+            on Y2K aesthetics.
+        price: '2600000.00'
+        category: 2
+        stock: 5
+-   model: products.product
+    pk: 9
+    fields:
+        name: sweatshirt printed NYC, Brooklyn
+        description: The loose silhouette allows for freedom of movement, providing
+            comfort in any situation.
+        price: '600000.00'
+        category: 3
+        stock: 8
+-   model: products.product
+    pk: 10
+    fields:
+        name: AVVA men's trousers, A52Y3209
+        description: Style and Comfort for a Modern Man.
+        price: '1800000.00'
+        category: 3
+        stock: 5

@@ -1,0 +1,21 @@
+-   model: billing.payment
+    pk: 1
+    fields:
+        order: 1
+        stripe_charge_id: ch_3SbNQQRpQ894GGwI0plHcKqO
+        amount: '44000000.00'
+        created_at: 2025-12-06 15:29:35.649164+00:00
+-   model: billing.payment
+    pk: 2
+    fields:
+        order: 2
+        stripe_charge_id: ch_3SbNQfRpQ894GGwI0KIRdeao
+        amount: '44000000.00'
+        created_at: 2025-12-06 15:29:50.861056+00:00
+-   model: billing.payment
+    pk: 3
+    fields:
+        order: 3
+        stripe_charge_id: ch_3SbNR6RpQ894GGwI1tgp6tEp
+        amount: '44000000.00'
+        created_at: 2025-12-06 15:30:17.939209+00:00

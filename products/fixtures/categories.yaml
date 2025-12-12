@@ -1,0 +1,12 @@
+-   model: products.category
+    pk: 1
+    fields:
+        name: Electronics
+-   model: products.category
+    pk: 2
+    fields:
+        name: Shoes
+-   model: products.category
+    pk: 3
+    fields:
+        name: Mens clothing
