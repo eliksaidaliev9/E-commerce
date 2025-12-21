@@ -3,7 +3,7 @@ services:
   web:
     build: .
     command: >
-      sh -c "
+      bash -c "
         python manage.py migrate &&
         python manage.py collectstatic --no-input &&
         python manage.py init_superuser &&
