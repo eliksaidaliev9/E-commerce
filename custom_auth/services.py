@@ -16,7 +16,7 @@ def send_verification_sms(phone_number):
     url = "https://gateway.seven.io/api/sms"
     payload = {
         "to": [phone_number],
-        "from": "elxio",
+        "from": "elixya",
         "text": f"Your verification code is {code}"
     }
     headers = {
