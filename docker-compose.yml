@@ -2,13 +2,7 @@ version: "3"
 services:
   web:
     build: .
-    command: >
-      bash -c "
-        python manage.py migrate &&
-        python manage.py collectstatic --no-input &&
-        python manage.py init_superuser &&
-        gunicorn --reload -b 0.0.0.0:8000 config.wsgi --workers 1 --timeout 300 --log-level DEBUG
-      "
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/usr/src/app
     ports:
