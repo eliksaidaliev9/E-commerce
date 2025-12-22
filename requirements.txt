@@ -13,6 +13,7 @@ colorama==0.4.6
 cryptography==46.0.3
 defusedxml==0.7.1
 Django==5.2.8
+django-cors-headers==4.9.0
 django-filter==25.2
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
@@ -31,7 +32,7 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 python3-openid==3.2.0
 pytz==2025.2
-pywin32==311 ; platform_system == "Windows"
+pywin32==311
 PyYAML==6.0.3
 redis==5.0.0
 requests==2.32.5
