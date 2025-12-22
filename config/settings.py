@@ -188,7 +188,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://elixya.uz",
     "https://www.elixya.uz",
     "http://elixya.uz",
-    "https://www.elixya.uz",
+    "http://www.elixya.uz",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
