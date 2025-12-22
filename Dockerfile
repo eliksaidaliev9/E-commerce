@@ -10,4 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/
 
+RUN python manage.py collectstatic --no-input
+
 CMD ["gunicorn", "config.wsgi:application", "-b", "0.0.0.0:8000", "--workers", "2", "--timeout", "300", "--log-level", "debug"]
