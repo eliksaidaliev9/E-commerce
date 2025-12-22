@@ -32,6 +32,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['elixya.uz', 'www.elixya.uz']
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 # Application definition
 
