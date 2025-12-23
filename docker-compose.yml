@@ -10,6 +10,7 @@ services:
       "
     volumes:
       - .:/app
+      - static_volume:/app/staticfiles
     ports:
       - "8000:8000"
     env_file:
@@ -50,3 +51,6 @@ services:
       - static_volume:/app/staticfiles
     depends_on:
       - web
+
+volumes:
+  static_volume:
