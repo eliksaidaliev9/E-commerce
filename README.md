@@ -4,14 +4,17 @@
 Production-ready E-Commerce REST API built with Django Rest Framework, Docker, and Celery.
 Designed for scalability, security, and modern backend architectures.
 
+
 🌐 Live Swagger API Documentation:
 
 👉 https://elixya.uz
+
 
 ✨ Overview:
 
 This project is a fully-featured backend service for an e-commerce platform, providing secure authentication, product management, background task processing, and API documentation via Swagger.
 The system follows modern backend best practices and is fully containerized for easy deployment.
+
 
 🧱 Tech Stack:
 
@@ -39,6 +42,7 @@ The system follows modern backend best practices and is fully containerized for 
 
 • SQLite (Development)
 
+
 🚀 Key Features:
 
 • 🔐Secure JWT authentication 
@@ -52,8 +56,24 @@ The system follows modern backend best practices and is fully containerized for 
 • 🔒HTTPS with Let’s Encrypt
 • 🐳Fully Dockerized production setup
 
+
 📌 API Documentation:
+
 All endpoints are documented using Swagger UI.
 
 📍 Access here:
+
 👉 https://elixya.uz
+
+
+🧠 Author
+
+Elyor Mahamadjanov
+
+Backend Developer 
+
+🌐 Website: https://elixya.uz
+
+📧 Email: elyor1996em@gmail.com
+
+💼 GitHub: https://github.com/eliksaidaliev9
