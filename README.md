@@ -47,14 +47,23 @@
 ## 🚀 Key Features
 
 • 🔐Secure JWT authentication 
+
 • 👤Custom user model 
+
 • 📦Products & categories management 
+
 • 💳Payment integration 
+
 • 📲SMS-based authentication
+
 • 📬Email notifications
+
 • ⚙️Background tasks with Celery
+
 • 📖Interactive Swagger API docs
+
 • 🔒HTTPS with Let’s Encrypt
+
 • 🐳Fully Dockerized production setup
 
 
