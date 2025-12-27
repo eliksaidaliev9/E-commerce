@@ -76,9 +76,9 @@ All endpoints are documented using Swagger UI.
 • cd E-commerce
 
 
-2️⃣ Environment Variables:
+**2️⃣ Environment Variables:**
 
-Create a .env file:
+**Create a .env file:**
 
 • SECRET_KEY=your_secret_key
 
@@ -90,7 +90,7 @@ Create a .env file:
 
 • CELERY_RESULT_BACKEND=redis://redis:6379/0
 
-3️⃣ Build & Run:
+**3️⃣ Build & Run:**
 
 • docker-compose up -d --build
 
@@ -102,15 +102,15 @@ Create a .env file:
 
 ## 🧠 Author
 
-Elyor Mahamadjanov
+**Elyor Mahamadjanov**
 
-Backend Developer 
+**Backend Developer**
 
-🌐 Website: https://elixya.uz
+**🌐 Website:** https://elixya.uz
 
-📧 Email: elik.saidaliev9@gmail.com
+**📧 Email:** elik.saidaliev9@gmail.com
 
-💼 GitHub: https://github.com/eliksaidaliev9
+**💼 GitHub:** https://github.com/eliksaidaliev9
 
 
 ## ⭐️ Support
