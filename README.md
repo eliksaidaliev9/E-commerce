@@ -41,17 +41,17 @@ The system follows modern backend best practices and is fully containerized for 
 
 🚀 Key Features:
 
-• 🔐 Secure JWT authentication
-• 👤 Custom user model
-• 📦 Products & categories management
-• 📦 Products & categories management
-• 💳 Payment integration ready (Stripe)
-• 📲 SMS-based authentication
-• 📬 Email notifications
-• ⚙️ Background tasks with Celery
-• 📖 Interactive Swagger API docs
-• 🔒 HTTPS with Let’s Encrypt
-• 🐳 Fully Dockerized production setup
+• 🔐Secure JWT authentication 
+ • 👤Custom user model 
+ • 📦Products & categories management 
+ • 📦Products & categories management 
+ • 💳Payment integration ready (Stripe) 
+ • 📲SMS-based authentication
+• 📬Email notifications
+• ⚙️Background tasks with Celery
+• 📖Interactive Swagger API docs
+• 🔒HTTPS with Let’s Encrypt
+• 🐳Fully Dockerized production setup
 
 📌 API Documentation:
 All endpoints are documented using Swagger UI.
