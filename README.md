@@ -1,4 +1,3 @@
-# E-commerce
 ## 🛒 E-Commerce Backend API
 
 • Production-ready E-Commerce REST API built with Django Rest Framework, Docker, and Celery.
@@ -70,7 +69,7 @@ All endpoints are documented using Swagger UI.
 
 ## 🐳 Getting Started (Docker)
 
-** 1️⃣ Clone Repository:
+**1️⃣ Clone Repository:**
 
 • git clone https://github.com/eliksaidaliev9/E-commerce.git
 
