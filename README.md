@@ -1,5 +1,5 @@
 # E-commerce
-### 🛒 E-Commerce Backend API
+## 🛒 E-Commerce Backend API
 
 • Production-ready E-Commerce REST API built with Django Rest Framework, Docker, and Celery.
 
