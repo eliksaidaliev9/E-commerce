@@ -16,16 +16,27 @@ The system follows modern backend best practices and is fully containerized for 
 🧱 Tech Stack:
 
 • Python 3.13
+
 • Django 5.2
+
 • Django Rest Framework
+
 • JWT Authentication (SimpleJWT)
+
 • Djoser
+
 • Celery
+
 • RabbitMQ
+
 • Redis
+
 • Docker & Docker Compose
+
 • Nginx
+
 • Swagger (drf-yasg)
+
 • SQLite (Development)
 
 🚀 Key Features:
