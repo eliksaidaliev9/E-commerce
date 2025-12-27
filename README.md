@@ -6,19 +6,19 @@
 • Designed for scalability, security, and modern backend architectures.
 
 
-🌐 Live Swagger API Documentation:
+## 🌐 Live Swagger API Documentation
 
 👉 https://elixya.uz
 
 
-✨ Overview:
+## ✨ Overview
 
 • This project is a fully-featured backend service for an e-commerce platform, providing secure authentication, product management, background task processing, and API documentation via Swagger.
 
 • The system follows modern backend best practices and is fully containerized for easy deployment.
 
 
-🧱 Tech Stack:
+## 🧱 Tech Stack
 
 • Python 3.13
 
@@ -45,7 +45,7 @@
 • SQLite (Development)
 
 
-🚀 Key Features:
+## 🚀 Key Features
 
 • 🔐Secure JWT authentication 
 • 👤Custom user model 
@@ -59,18 +59,18 @@
 • 🐳Fully Dockerized production setup
 
 
-📌 API Documentation:
+## 📌 API Documentation
 
 All endpoints are documented using Swagger UI.
 
-📍 Access here:
+## 📍 Access here
 
 👉 https://elixya.uz
 
 
-🐳 Getting Started (Docker):
+## 🐳 Getting Started (Docker)
 
-1️⃣ Clone Repository:
+** 1️⃣ Clone Repository:
 
 • git clone https://github.com/eliksaidaliev9/E-commerce.git
 
@@ -95,13 +95,13 @@ Create a .env file:
 
 • docker-compose up -d --build
 
-🔐 Authentication:
+## 🔐 Authentication
 
 • Uses JWT Bearer Token authentication.
 
 • Authorization: Bearer <access_token>
 
-🧠 Author:
+## 🧠 Author
 
 Elyor Mahamadjanov
 
@@ -114,6 +114,6 @@ Backend Developer
 💼 GitHub: https://github.com/eliksaidaliev9
 
 
-⭐️ Support:
+## ⭐️ Support
 
 If you find this project useful, please consider giving it a ⭐️ on GitHub.
