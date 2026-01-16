@@ -19,6 +19,7 @@ services:
 
   rabbitmq:
     image: rabbitmq:management
+    container_name: e-commerce-rabbitmq
     environment:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
@@ -28,11 +29,13 @@ services:
 
   redis:
     image: redis:latest
+    container_name: e-commerce-redis
     ports:
       - "6379:6379"
 
   celery:
     build: .
+    container_name: e-commerce-celery
     command: celery -A config worker --loglevel=info
     volumes:
       - .:/app
@@ -44,6 +47,7 @@ services:
 
   nginx:
     image: nginx:latest
+    container_name: e-commerce-nginx
     ports:
       - "80:80"
       - "443:443"
