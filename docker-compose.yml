@@ -14,7 +14,7 @@ services:
       - static_volume:/app/staticfiles
     env_file:
       - .env
-    expose:
+    ports:
       - "8000"
 
   rabbitmq:
