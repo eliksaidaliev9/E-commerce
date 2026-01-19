@@ -47,7 +47,6 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: e-commerce-nginx
     ports:
       - "80:80"
       - "443:443"
