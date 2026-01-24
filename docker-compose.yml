@@ -45,5 +45,17 @@ services:
     env_file:
       - ./.env
 
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - static_volume:/app/staticfiles
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - web
+
 volumes:
   static_volume:
